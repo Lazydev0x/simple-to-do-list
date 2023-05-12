@@ -1,40 +1,117 @@
-<head>
+<!DOCTYPE html>
+  <head>
     <link rel="stylesheet" type="text/css" href="gbemidebe.css" media=”screen” />
-    </head>
+ </head>
+
+ <style> #enter { 
+                    
+    border: none;
+    padding: 15px 15px;
+    border-radius: 5px;
+    color: #04A1BF;
+    background-color: #025F70;
+    transition: all 0.75s ease;
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    -o-transition: all 0.75 ease;
+    font-weight: normal; 
+} 
+
+#enter:hover{
+background-color: #02798F;
+color: #FFCD5D;
+}
+
+ul {
+	text-align: left;
+	margin-top: 20px;
+}
+
+li {
+	list-style: none;
+	padding: 10px 20px;
+	color: #ffffff;
+	text-transform: capitalize;
+	font-weight: 600;
+	border: 2px solid #025f70;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background: #4EB9CD;
+	transition: all 0.75s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5 ease;
+}
+
+li:hover {
+	background: #76CFE0;
+}
+
+li > button {
+	font-weight: normal;
+	background: none;
+	border: none;
+	float: right;
+	color: #025f70;
+	font-weight: 800;
+}
+
+input {
+	border-radius: 5px;
+	min-width: 65%;
+	padding: 5px;
+	border: #04A1BF;
+}
 
 
-<body>
-    <div class="container">
+.done {
+	background: #51DF70 !important;
+	color: #00891E;
+}
+
+.delete {
+	display: none;
+}
+    
+    </style>
+
+
+ <body align = "center">
+            <div class="container">
+                <div class="row">
+                    <div class="intro col-12">
+                        <h1 style="text-align: center; color: blue;">Work-to-do</h1>
+                    </div>
+                </div>
+            </div>
+
         <div class="row">
-            <div class="intro col-12">
-                <h1>Work-to-do</h1>
+            <div class="helpText col-12">
+                <p id="first">Enter the text into the input field to add Items</p>
+                <p id="second">Click the item to mark it as complete</p>
+                <p id="third">Click the "X" to remove the item from your list</p>
             </div>
         </div>
-    </div>
-</body>
 
-<div class="row">
-    <div class="helpText col-12">
-        <p id="first">Enter the text into the input field to add Items</p>
-        <p id="second">Click the item to mark it as complete</p>
-        <p id="third">Click the "X" to remove the item from your list</p>
-    </div>
-</div>
+        <!-- Where you input the text -->
 
-<!-- Where you input the text -->
-<div class="row">
-    <div class="col-12">
-        <input id="userInput"type="text"placeholder="NewItem"maxlength="27">
-        <button id="enter"><i class="fas-fa-pencil-alt"></i></button>
-    </div>
-</div>
+        <div class="row">
+            <div class="col-12">
+                <input id="userInput"type="text"placeholder="NewItem"maxlength="27">
+                <button id="enter">  <i class="fas-fa-pencil-alt"></i></button>
+            </div>
+        </div>
 
-<!--- Empty list --->
+        <!--- Empty list --->
 
-<div class="row">
-    <div class="listitem col-12">
-        <ul class="col-12 offset-0 col-sm-8 offset-sm-2">
-        </ul>
-    </div>
-</div>
-</div>
+        <div class="row">
+            <div class="listitem col-12">
+                <ul class="col-12 offset-0 col-sm-8 offset-sm-2">
+                </ul>
+            </div>
+        </div>
+        </div>
+  </body>
+</html>

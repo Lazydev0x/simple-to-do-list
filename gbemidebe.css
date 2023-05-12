@@ -1,4 +1,8 @@
 body {
+    text-align: center;
+}
+
+/*body {
 	background: #04A1BF;
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
@@ -105,4 +109,4 @@ input {
 
 .delete {
 	display: none;
-}
+}*/
